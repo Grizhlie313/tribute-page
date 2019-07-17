@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title id="title">Tribute Page to Alan Watts</title>
+    <link rel="stylesheet" type="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+  </head>
+
+<style>
+
+:root {
+  font-size: 62.5%;
+  font-family: roboto;
+  text-align: center;
+  background: #F5F5F5;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+ul {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+li {
+  margin-top: 10px;
+}
+
+a {
+  font-size: 1.6rem;
+}
+
+figcaption {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 3rem;
+}
+
+#top-header {
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+  ". header ."
+  ". image ."
+  ". content ."
+  "footer footer footer";
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 50px auto auto 50px;
+    grid-template-areas:
+    ". header ."
+    ". image."
+    ". content ."
+    ". footer .";
+    padding: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto auto 50px;
+    grid-template-areas:
+    "header"
+    "image"
+    "content"
+    "footer";
+    padding: 10px;  }
+}
+
+.grid-item-1 {
+  grid-area: header;
+  margin: auto;
+  padding: auto;
+}
+
+.grid-item-2 {
+  grid-area: image;
+}
+
+.grid-item-3 {
+  grid-area: content;
+}
+
+.grid-item-4 {
+  grid-area: footer;
+  text-align:center;
+}
+
+#img-div {
+  background-color: white;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border: 100px;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.footer-content {
+  background: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffa500;
+}
+
+</style>
+
+  <body>
+    <main id="main">
+      <div class="grid-container">
+        <div class="grid-item-1">
+          <div id="top-header">
+            <h1 id="title">
+              East to West: Tribute to Alan Watts
+            </h1>
+              <p id="introduction-statement">
+                The man who studied and interpreted the Eastern philosophies for a Western audience.
+              </p>
+          </div>
+        </div>
+        <div class="grid-item-2">
+          <div id="img-div">
+            <img src="https://i1.wp.com/www.brainpickings.org/wp-content/uploads/2014/01/alanwatts1.jpg?fit=774%2C900&ssl=1" id="image" alt="Image of Alan Watts during the 1960's, when he had his famous goatee & long hair" >
+            <figcaption id="img-caption">
+              Alan Watts' most famous picture from the 1960's when he truly begun to look like the embodiment of all the knowledge he possessed.
+            </figcaption>
+          </div>
+        </div>
+        <div class="grid-item-3">
+          <div id="tribute-info">
+            <h2 id="sub-title">
+              The story & life of Alan Watts
+            </h2>
+              <p>
+                Alan (Wilson) Watts was a British-American known for popularising the Eastern philosophies, within the Western World.
+                His life can be summarised, but in no way encapsulated entirely, by these points:
+              </p>
+            <h3>Childhood & Early Life</h3>
+              <ul>
+                <li>
+                  January 6<sup>th</sup> 1915 - Watts is born into a middle income family in Chislehurst, England.
+                </li>
+                <li>
+                  Watts spent most of his childhood years alone, being attracted to nature he quickly begun to learn how to identify wildflowers and butterflies.
+                </li>
+                <li>
+                  His mother's religious orientation had a huge impact on Watts, as he later recalled.
+                </li>
+                <li>
+                  Even as a boy, Watts was attracted to the cultures of China and Japan. His mother was once presented with paintings from China, by a few missionaries. Watts was highly intrigued by them.
+                </li>
+                <li>
+                  Watts excelled in school, even though he found the type of Christianity taught in it to be rather grim.
+                </li>
+                <li>
+                  After his trip to France with Francis Coshaw, Watts became fascinated with Buddhism. He begun consuming knowledge on the faith and quickly became a member of the London Buddhist Lodge (now referred to as the Buddhist Society).
+                </li>
+                <li>
+                  At age 15, Watts begun studying modern history in the Trinity London Collage. However he missed his scholarship and had to pause his studies. He then got a job at a printing house, followed by a bank.
+                </li>
+              </ul>
+            <h3>Career</h3>
+              <ul>
+                <li>
+                  In 1931, at age 16, Watts was made the Secretery of the London Buddhist Lodge.
+                </li>
+                <li>
+                  In 1932, at age 17, he published his first (32page short) book "An outline of Zen Buddhisim". It was highly appreciated by the scholars and is still in print today.
+                </li>
+                <li>
+                  In 1936 & 1936 Watts published 2 more books: 'The Spirit of Zen: A Way of Life, Work and Art in the Far East' and 'The Legacy of Asia and Western Man'.
+                </li>
+                <li>
+                  In 1938 Watts and his family moved to New York. He then tried to get ordained as a monk but could not get used to his teacher's method.
+                </li>
+                <li>
+                  Looking for a vocational outlet for his spiritual inclinations, he joined Seabury-Western Theological Seminary, an Episcopal (Anglican) school in Evanston, Illinois. Here he studied Christian scriptures, theology, and church history.
+                </li>
+                <li>
+                  Looking for a vocational outlet for his spiritual inclinations, he joined Seabury-Western Theological Seminary, an Episcopal (Anglican) school in Evanston, Illinois. Here he studied Christian scriptures, theology, and church history.
+                </li>
+                <li>
+                  Watts moved to  San Francisco and joined the American Academy of Asian Studies as faculty and met many international scholars. He was especially influenced by Saburō Hasegawa, the well-known Japanese painter, from whom he learned a lot about Japanese art, customs as well as their perception of nature.
+                </li>
+                <li>
+                  He also seized the opportunity to learn Chinese language as well as Chinese brush calligraphy. Apart from that, he studied many other subjects ranging from Vedanta to quantum mechanics and cybernetics, later becoming the dean of the academy.
+                </li>
+                <li>
+                  Watts became more known through the free radio station there, attracting large audiences. He also published his bestselling book 'The Way of Zen'.
+                </li>
+                <li>
+                  Around 1957 Watts begun to experiment with psychidelic drugs and helped in mutliple studies, including one on LSD, part-taking in the drug multiple times.
+                </li>
+                <li>
+                  Soon he began travelling widely to speak at universities and growth centers across the US and Europe and by early 1970s, he became the most important interpreter of Eastern thoughts in the Western world.
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="grid-item-4">
+          <div class="footer-content">
+            <p class="footer-text">
+              Feel free to explore the fascinating world of <a href="https://en.wikipedia.org/wiki/Alan_Watts#cite_note-8" target="_blank" id="tribute-link">Alan Watts</a> to learn about one of the most stimulating minds of the 1900s.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
